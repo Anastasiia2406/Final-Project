@@ -252,3 +252,138 @@ body {
     border-radius: 12px;
     object-fit: cover;
 }
+
+.portfolio {
+    flex-grow: 1;
+    padding-top: 120px;
+}
+
+.portfolio__bottom {
+    padding: 40px;
+    position: relative;
+}
+
+.portfolio__pagination {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.portfolio__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.portfolio__top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 64px;
+    max-width: 700px;
+}
+
+.heading {
+    color: var(--Brand-Primary, #052838);
+    font-family: Outfit;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 64px;
+}
+
+.text {
+    color: var(--Secondary, #375360);
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.subtitle {
+    color: var(--Grayscale-000, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.portfolio__slider {
+    position: relative;
+}
+
+.portfolio__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    width: 64px;
+    height: 64px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: var(--Brand-Primary, #052838);
+}
+
+.portfolio__arrow_prev {
+    left: -32px;
+    right: auto;
+    z-index: 10;
+}
+
+.portfolio__arrow_next {
+    right: -32px;
+    left: auto;
+    z-index: 10;
+}
+
+
+.portfolio__list {
+    display: flex;
+    gap: 24px;
+}
+
+.portfolio__item {
+    list-style-type: none;
+}
+
+.portfolio-card {
+    width: 544px;
+    height: 544px;
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.portfolio-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio-card__content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: var(--Brand-Primary, #052838);
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 144px;
+}
+
+.portfolio-card__text {
+    color: var(--Grayscale-300, #D7DAE2);
+    margin-top: 8px;
+    /* Body L */
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
