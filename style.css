@@ -4,7 +4,193 @@
     box-sizing: border-box;
 }
 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+}
+
+.title {
+    font-size: 100px;
+    font-weight: 700;
+    color: #052838;
+    line-height: 110px;
+}
+
+.center {
+    padding-left: calc(50% - 840px);
+    padding-right: calc(50% - 840px);
+}
+
+.hero {
+    min-height: 1020px;
+    background-image: url(img/home.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__logo {}
+
+.logo {}
+
+.logo__img {
+    display: block;
+}
+
+.header__nav {}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__link {
+    color: #375360;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.nav__link:hover {
+    border-bottom: 1px solid #052838;
+}
+
+.nav__link_active {
+    border-bottom: 1px solid #052838;
+}
+
+.header__phone {
+    display: flex;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 12px;
+    background: #052838;
+    transition: all 0.3s ease-in-out;
+}
+
+.header__phone:hover {
+    background: #0C3D54;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phone__text {
+    color: var(--Grayscale-000, #FFF);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.phone__icon {
+    display: block;
+}
+
+.hero__content {
+    flex-grow: 1;
+    padding-top: 226px;
+
+}
+
+.hero__info {
+    max-width: 788px;
+}
+
+.hero__title {
+    margin: 0;
+    color: var(--Brand-Primary, #052838);
+    font-family: Outfit;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110px;
+    /* 110% */
+    margin-bottom: 20px;
+}
+
+.hero__margin {
+    margin-top: 40px;
+}
+
+.text-big {
+    color: var(--Secondary, #375360);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.button {
+    display: flex;
+    width: 260px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    color: var(--Grayscale-000, #FFF);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    border-radius: 12px;
+    background: var(--Brand-Primary, #052838);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background: #0C3D54;
+}
+
+.hero__button {
+    display: flex;
+    width: 260px;
+    padding: 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 12px;
+    background: var(--Brand-Primary, #052838);
+    color: #FFF;
+    margin-top: 40px;
+}
+
+.hero__button:hover {
+    background: #0C3D54;
 }
