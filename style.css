@@ -380,6 +380,10 @@ body {
     height: 144px;
 }
 
+.portfolio-card__content:hover {
+    background: var(--Brand-Hover, #0C3D54);
+}
+
 .portfolio-card__text {
     color: var(--Grayscale-300, #D7DAE2);
     margin-top: 8px;
@@ -434,6 +438,10 @@ body {
     border-radius: 12px;
     position: relative;
     height: 280px;
+}
+
+.cert_card:hover {
+    background: var(--Brand-Hover, #0C3D54);
 }
 
 .cert_card h3 {
@@ -574,6 +582,10 @@ body {
     background: var(--Brand-Primary, #052838);
 }
 
+.partners_description:hover {
+    background: var(--Brand-Hover, #0C3D54);
+}
+
 .partners_description h3 {
     color: var(--Grayscale-000, #FFF);
     font-feature-settings: 'liga' off, 'clig' off;
@@ -638,10 +650,12 @@ body {
     line-height: 64px;
     /* 100% */
 }
+
 .faq__item {
     width: 828px;
     border-bottom: 1px solid var(--Grayscale-300, #D7DAE2);
 }
+
 .faq__question {
     display: flex;
     justify-content: space-between;
@@ -665,12 +679,14 @@ body {
 .faq__question svg {
     flex-shrink: 0;
 }
-.faq__answer{
+
+.faq__answer {
     color: var(--Secondary, #375360);
-/* Body L */
-font-family: Outfit;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
+    /* Body L */
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
 }
