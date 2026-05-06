@@ -874,6 +874,10 @@ body {
     border-radius: 8px;
 }
 
+.start {
+    padding-bottom: 120px;
+}
+
 .footer {
     background-color: #ffffff;
     border-top: 1px solid #e5e7eb;
