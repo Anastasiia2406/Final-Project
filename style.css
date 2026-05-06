@@ -262,21 +262,66 @@ body {
     padding-bottom: 120px;
 }
 
+
 .portfolio__bottom {
-    padding: 40px;
     position: relative;
+    margin-top: 40px;
+    padding-bottom: 40px;
 }
 
-.portfolio__pagination {
+.portfolio__progress {
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 40px;
+    /* центрируем весь блок */
+    gap: 24px;
 }
+
+.portfolio__progress-current {
+    color: var(--Brand-Primary, #052838);
+    /* Body L */
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+}
+
+.portfolio__progress-total {
+    color: var(--Grayscale-400, #999EAD);
+    /* Body L */
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.portfolio__progress-bar {
+    width: 400px;
+    /* как в макете */
+    height: 2px;
+    background: #D7DAE2;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__progress-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    /* для 01/02 */
+    height: 100%;
+    background: #052838;
+}
+
 
 .portfolio__button {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -40px;
 }
 
 .portfolio__top {
@@ -316,12 +361,14 @@ body {
 
 .portfolio__slider {
     position: relative;
+
 }
 
 .portfolio__arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
     display: flex;
     width: 64px;
     height: 64px;
@@ -345,6 +392,15 @@ body {
     z-index: 10;
 }
 
+.portfolio__viewport {
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.portfolio__viewport::-webkit-scrollbar {
+    display: none;
+}
 
 .portfolio__list {
     display: flex;
@@ -353,6 +409,8 @@ body {
 
 .portfolio__item {
     list-style-type: none;
+    flex: 0 0 calc((100% - 48px) / 3);
+    scroll-snap-align: start;
 }
 
 .portfolio-card {
@@ -561,11 +619,23 @@ body {
     z-index: 10;
 }
 
+.partners__viewport {
+    overflow: hidden;
+    width: 100%;
+}
+
+.partners__track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
 .partners__content {
-    padding-top: 60px;
+    max-width: 100%;
     position: relative;
     border-radius: 24px;
     overflow: hidden;
+    flex-shrink: 0;
+
 }
 
 .partners_description {
@@ -616,12 +686,51 @@ body {
 
 }
 
-.partners__pagination {
-    color: #6b7c85;
-    font-size: 14px;
+.partners__progress {
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 40px;
+    gap: 24px;
+}
+
+.partners__progress-count {
+    display: flex;
+    align-items: center;
+}
+
+.partners__progress-current,
+.partners__progress-slash {
+    color: #052838;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.partners__progress-total {
+    color: #999EAD;
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.partners__progress-bar {
+    width: 400px;
+    height: 2px;
+    background: #D7DAE2;
+    position: relative;
+    overflow: hidden;
+}
+
+.partners__progress-fill {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 33.333%;
+    height: 100%;
+    background: #052838;
+    transition: width 0.3s ease;
 }
 
 .partners_button {
@@ -678,17 +787,34 @@ body {
 
 .faq__question svg {
     flex-shrink: 0;
+    transform: rotate(180deg);
+    /* изначально стрелка вверх */
+    transition: transform 0.3s ease;
 }
 
 .faq__answer {
     color: var(--Secondary, #375360);
-    /* Body L */
     font-family: Outfit;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
-    /* 150% */
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
+}
+
+.faq__item.active .faq__answer {
+    max-height: 200px;
+    opacity: 1;
+    margin-bottom: 24px;
+}
+
+.faq__item.active .faq__question svg {
+    transform: rotate(0deg);
+    /* при открытии стрелка вниз */
 }
 
 .start_content {
