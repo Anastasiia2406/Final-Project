@@ -109,7 +109,9 @@ body {
 .header__phone:hover {
     background: #0C3D54;
 }
-
+.header__phone:active {
+    background: var(--Brand-Pressed, #041A24);
+}
 .phone {
     display: flex;
     align-items: center;
@@ -197,7 +199,9 @@ body {
 .button:hover {
     background: #0C3D54;
 }
-
+.button:active{
+    background: var(--Brand-Pressed, #041A24);
+}
 .hero__button {
     display: flex;
     width: 260px;
@@ -214,7 +218,9 @@ body {
 .hero__button:hover {
     background: #0C3D54;
 }
-
+.hero__button:active {
+    background: var(--Brand-Pressed, #041A24);
+}
 .about {
     flex-grow: 1;
     padding-top: 120px;
@@ -400,6 +406,15 @@ body {
     gap: 8px;
     border-radius: 100px;
     background: var(--Brand-Primary, #052838);
+    border: none;
+}
+
+.portfolio__arrow:hover {
+    background: var(--Brand-Hover, #0C3D54);
+}
+
+.portfolio__arrow:active {
+    background: var(--Brand-Pressed, #041A24);
 }
 
 .portfolio__arrow_prev {
@@ -627,8 +642,14 @@ body {
     gap: 8px;
     border-radius: 100px;
     background: var(--Brand-Primary, #052838);
+    border: none;
 }
-
+.partners__arrow:hover {
+    background: var(--Brand-Hover, #0C3D54);
+}
+.partners__arrow:active {
+    background: var(--Brand-Pressed, #041A24);
+}
 .partners__arrow_prev {
     left: -32px;
     right: auto;
