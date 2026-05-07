@@ -97,3 +97,18 @@ faqItems.forEach((item) => {
         item.classList.toggle('active');
     });
 });
+
+/* Mobile Menu */
+const burger = document.querySelector('#burger');
+const mobileMenu = document.querySelector('#mobileMenu');
+const closeMenu = document.querySelector('#closeMenu');
+
+if (burger && mobileMenu && closeMenu) {
+    burger.addEventListener('click', () => {
+        mobileMenu.classList.add('active');
+    });
+
+    closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+    });
+}

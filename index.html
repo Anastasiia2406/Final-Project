@@ -12,215 +12,384 @@
 </head>
 
 <body>
-    <!DOCTYPE html>
-    <html lang="en">
+    <section class="hero">
+        <header class="header center">
+            <a class="header__logo logo" href="#">
+                <img src="img/Logo.png" alt="logo">
+            </a>
+            <button class="burger" id="burger" type="button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="header__nav nav">
+                <a class="nav__link nav__link_active" href="#">Main</a>
+                <a class="nav__link" href="#">Portfolio</a>
+                <a class="nav__link" href="#">Price</a>
+                <a class="nav__link" href="#">Certifications</a>
+                <a class="nav__link" href="#">Contacts</a>
+            </nav>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
+            <a class="header__phone phone" href="tel:+447755555764">
+                <span class="phone__text">(+44) 7755-555-764</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path
+                        d="M19 12C19 10.05 18.3208 8.39583 16.9625 7.0375C15.6042 5.67917 13.95 5 12 5V3C13.25 3 14.4208 3.2375 15.5125 3.7125C16.6042 4.1875 17.5542 4.82917 18.3625 5.6375C19.1708 6.44583 19.8125 7.39583 20.2875 8.4875C20.7625 9.57917 21 10.75 21 12H19ZM15 12C15 11.1667 14.7083 10.4583 14.125 9.875C13.5417 9.29167 12.8333 9 12 9V7C13.3833 7 14.5625 7.4875 15.5375 8.4625C16.5125 9.4375 17 10.6167 17 12H15ZM19.95 21C17.8667 21 15.8083 20.5458 13.775 19.6375C11.7417 18.7292 9.89167 17.4417 8.225 15.775C6.55833 14.1083 5.27083 12.2583 4.3625 10.225C3.45417 8.19167 3 6.13333 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07917 8.725 3.2375C8.90833 3.39583 9.01667 3.58333 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.70417 12.1125 8.1625 12.6875C8.62083 13.2625 9.125 13.8167 9.675 14.35C10.1917 14.8667 10.7333 15.3458 11.3 15.7875C11.8667 16.2292 12.4667 16.6333 13.1 17L15.45 14.65C15.6 14.5 15.7958 14.3875 16.0375 14.3125C16.2792 14.2375 16.5167 14.2167 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1375 20.775 15.3125C20.925 15.4875 21 15.6833 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21ZM6.025 9L7.675 7.35L7.25 5H5.025C5.10833 5.68333 5.225 6.35833 5.375 7.025C5.525 7.69167 5.74167 8.35 6.025 9ZM14.975 17.95C15.625 18.2333 16.2875 18.4583 16.9625 18.625C17.6375 18.7917 18.3167 18.9 19 18.95V16.75L16.65 16.275L14.975 17.95Z"
+                        fill="white" />
+                </svg>
+            </a>
+            <div class="mobile-menu" id="mobileMenu">
+                <button class="mobile-menu__close" id="closeMenu">×</button>
 
-    <body>
-        <section class="hero">
-            <header class="header center">
-                <a class="header__logo logo" href="#">
-                    <img src="img/Logo.png" alt="logo">
-                </a>
-                <button class="burger" id="burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-
-                <nav class="header__nav nav">
-                    <a class="nav__link nav__link_active" href="#">Main</a>
-                    <a class="nav__link" href="#">Portfolio</a>
-                    <a class="nav__link" href="#">Price</a>
-                    <a class="nav__link" href="#">Certifications</a>
-                    <a class="nav__link" href="#">Contacts</a>
+                <nav class="mobile-menu__nav">
+                    <a href="#">Main</a>
+                    <a href="#">Portfolio</a>
+                    <a href="#">Price</a>
+                    <a href="#">Certifications</a>
+                    <a href="#">Contacts</a>
                 </nav>
 
-                <a class="header__phone phone" href="tel:+447755555764">
-                    <span class="phone__text">(+44) 7755-555-764</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M19 12C19 10.05 18.3208 8.39583 16.9625 7.0375C15.6042 5.67917 13.95 5 12 5V3C13.25 3 14.4208 3.2375 15.5125 3.7125C16.6042 4.1875 17.5542 4.82917 18.3625 5.6375C19.1708 6.44583 19.8125 7.39583 20.2875 8.4875C20.7625 9.57917 21 10.75 21 12H19ZM15 12C15 11.1667 14.7083 10.4583 14.125 9.875C13.5417 9.29167 12.8333 9 12 9V7C13.3833 7 14.5625 7.4875 15.5375 8.4625C16.5125 9.4375 17 10.6167 17 12H15ZM19.95 21C17.8667 21 15.8083 20.5458 13.775 19.6375C11.7417 18.7292 9.89167 17.4417 8.225 15.775C6.55833 14.1083 5.27083 12.2583 4.3625 10.225C3.45417 8.19167 3 6.13333 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07917 8.725 3.2375C8.90833 3.39583 9.01667 3.58333 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.70417 12.1125 8.1625 12.6875C8.62083 13.2625 9.125 13.8167 9.675 14.35C10.1917 14.8667 10.7333 15.3458 11.3 15.7875C11.8667 16.2292 12.4667 16.6333 13.1 17L15.45 14.65C15.6 14.5 15.7958 14.3875 16.0375 14.3125C16.2792 14.2375 16.5167 14.2167 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1375 20.775 15.3125C20.925 15.4875 21 15.6833 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21ZM6.025 9L7.675 7.35L7.25 5H5.025C5.10833 5.68333 5.225 6.35833 5.375 7.025C5.525 7.69167 5.74167 8.35 6.025 9ZM14.975 17.95C15.625 18.2333 16.2875 18.4583 16.9625 18.625C17.6375 18.7917 18.3167 18.9 19 18.95V16.75L16.65 16.275L14.975 17.95Z"
-                            fill="white" />
-                    </svg>
+                <a class="mobile-menu__phone" href="tel:+447755555764">
+                    (+44) 7755-555-764
                 </a>
-            </header>
-
-            <div class="hero__content center">
-                <div class="hero__info">
-                    <h1 class="hero__title">
-                        Construction<br>
-                        services
-                    </h1>
-
-                    <p class="hero__text">
-                        From residential renovations to large-scale commercial projects —<br>
-                        we bring craftsmanship, reliability, and precision to every build.
-                    </p>
-
-                    <a class="hero__button" href="#">
-                        Request a free quote
-                    </a>
-                </div>
             </div>
-        </section>
-        <section class="about center">
-            <div class="about-container">
-                <div class="about-text">
-                    <h2>About us</h2>
-                    <p>
-                        At BuildWise, we believe every project is more than bricks and mortar — it’s a
-                        vision brought to life.
-                        For over 20 years, we’ve been delivering high-quality construction solutions for homeowners,
-                        businesses, and developers.
-                    </p>
-                    <p>
-                        Our team combines expert craftsmanship, innovative design, and uncompromising safety standards
-                        to ensure every build is done right the first time.
-                        From initial planning to the final walkthrough, we work closely with our clients, keeping
-                        communication clear and expectations aligned.
-                    </p>
-                    <p>
-                        Our mission is simple: to build spaces that inspire, serve, and last for generations.
-                    </p>
-                    <a href="#" class="button">More about us</a>
-                </div>
+        </header>
 
-                <div class="about-image">
-                    <img src="img/about_img.png" alt="Modern house exterior">
-                </div>
-            </div>
-        </section>
+        <div class="hero__content center">
+            <div class="hero__info">
+                <h1 class="hero__title">
+                    Construction<br>
+                    services
+                </h1>
 
-        <section class="portfolio center padding-tb">
-            <div class="portfolio__top">
-                <h2 class="heading">
-                    Our portfolio
-                </h2>
-
-                <p class="text">
-                    From sleek modern homes to large-scale commercial complexes, our projects reflect the skill,
-                    precision, and dedication we bring to every build. Each one tells a story of careful planning,
-                    expert execution, and lasting quality.
+                <p class="hero__text">
+                    From residential renovations to large-scale commercial projects —<br>
+                    we bring craftsmanship, reliability, and precision to every build.
                 </p>
+
+                <a class="hero__button" href="#">
+                    Request a free quote
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="about center">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About us</h2>
+                <p>
+                    At BuildWise, we believe every project is more than bricks and mortar — it’s a
+                    vision brought to life.
+                    For over 20 years, we’ve been delivering high-quality construction solutions for homeowners,
+                    businesses, and developers.
+                </p>
+                <p>
+                    Our team combines expert craftsmanship, innovative design, and uncompromising safety standards
+                    to ensure every build is done right the first time.
+                    From initial planning to the final walkthrough, we work closely with our clients, keeping
+                    communication clear and expectations aligned.
+                </p>
+                <p>
+                    Our mission is simple: to build spaces that inspire, serve, and last for generations.
+                </p>
+                <a href="#" class="button">More about us</a>
             </div>
 
-            <div class="portfolio__slider">
-                <button class="portfolio__arrow portfolio__arrow_prev" type="button" aria-label="Previous project">
+            <div class="about-image">
+                <img src="img/about_img.png" alt="Modern house exterior">
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio center padding-tb">
+        <div class="portfolio__top">
+            <h2 class="heading">
+                Our portfolio
+            </h2>
+
+            <p class="text">
+                From sleek modern homes to large-scale commercial complexes, our projects reflect the skill,
+                precision, and dedication we bring to every build. Each one tells a story of careful planning,
+                expert execution, and lasting quality.
+            </p>
+        </div>
+
+        <div class="portfolio__slider">
+            <button class="portfolio__arrow portfolio__arrow_prev" type="button" aria-label="Previous project">
+                <svg class="portfolio__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24" fill="none">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="portfolio__viewport">
+                <div class="portfolio__list">
+                    <div class="portfolio__item">
+                        <article class="portfolio-card">
+                            <img class="portfolio-card__img" src="img/house1.jpg" alt="Metro Office Hub">
+
+                            <div class="portfolio-card__content">
+                                <h3 class="subtitle">
+                                    Metro Office Hub
+                                </h3>
+
+                                <p class="portfolio-card__text">
+                                    Complete office fit-out for a 10,000 sq ft corporate headquarters.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="portfolio__item">
+                        <article class="portfolio-card">
+                            <img class="portfolio-card__img" src="img/house2.jpg" alt="Riverside Heights">
+
+                            <div class="portfolio-card__content">
+                                <h3 class="subtitle">
+                                    Riverside Heights
+                                </h3>
+
+                                <p class="portfolio-card__text">
+                                    Luxury residential complex with panoramic views and eco-friendly design.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="portfolio__item">
+                        <article class="portfolio-card">
+                            <img class="portfolio-card__img" src="img/house3.jpg" alt="Hillside Villa Renovation">
+
+                            <div class="portfolio-card__content">
+                                <h3 class="subtitle">
+                                    Hillside Villa Renovation
+                                </h3>
+
+                                <p class="portfolio-card__text">
+                                    Full interior and exterior remodel blending classic charm with modern finishes.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="portfolio__item">
+                        <article class="portfolio-card">
+                            <img class="portfolio-card__img" src="img/house4.jpg" alt="Maple Grove Townhomes">
+
+                            <div class="portfolio-card__content">
+                                <h3 class="subtitle">
+                                    Maple Grove Townhomes
+                                </h3>
+
+                                <p class="portfolio-card__text">
+                                    A stylish suburban development offering comfort, community, and convenience.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="portfolio__item">
+                        <article class="portfolio-card">
+                            <img class="portfolio-card__img" src="img/house5.jpg" alt="Riverside Heights Residences">
+
+                            <div class="portfolio-card__content">
+                                <h3 class="subtitle">
+                                    Riverside Heights Residences
+                                </h3>
+
+                                <p class="portfolio-card__text">
+                                    A modern riverside apartment complex with energy-efficient design and panoramic
+                                    city views.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="portfolio__item">
+                        <article class="portfolio-card">
+                            <img class="portfolio-card__img" src="img/house6.jpg" alt="Hillside Villa Restoration">
+
+                            <div class="portfolio-card__content">
+                                <h3 class="subtitle">
+                                    Hillside Villa Restoration
+                                </h3>
+
+                                <p class="portfolio-card__text">
+                                    Complete restoration of a heritage property, blending classic architecture with
+                                    modern comforts.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <button class="portfolio__arrow portfolio__arrow_next" type="button" aria-label="Next project">
                     <svg class="portfolio__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                         viewBox="0 0 24 24" fill="none">
-                        <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                     </svg>
                 </button>
-                <div class="portfolio__viewport">
-                    <div class="portfolio__list">
-                        <div class="portfolio__item">
-                            <article class="portfolio-card">
-                                <img class="portfolio-card__img" src="img/house1.jpg" alt="Metro Office Hub">
+            </div>
+        </div>
 
-                                <div class="portfolio-card__content">
-                                    <h3 class="subtitle">
-                                        Metro Office Hub
-                                    </h3>
+        <div class="portfolio__bottom">
+            <div class="portfolio__progress">
+                <div class="portfolio__progress-count">
+                    <span class="portfolio__progress-current">01</span>
+                    <span class="portfolio__progress-slash">/</span>
+                    <span class="portfolio__progress-total">02</span>
+                </div>
 
-                                    <p class="portfolio-card__text">
-                                        Complete office fit-out for a 10,000 sq ft corporate headquarters.
+                <div class="portfolio__progress-bar">
+                    <div class="portfolio__progress-fill"></div>
+                </div>
+            </div>
+
+            <a class="button portfolio__button" href="#">
+                <span>View Full Portfolio</span>
+
+                <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </section>
+    <section class="certifications center padding-tb">
+        <div class="container">
+            <h2 class="cert_title">Certifications & credentials</h2>
+            <p class="text">
+                We believe great construction starts with strong foundations — not just in buildings,
+                but in professional standards. Our team holds industry-recognized certifications.
+            </p>
+
+            <div class="grid">
+                <div class="cert_card">
+                    <div>
+                        <h3>Fully Licensed & Insured</h3>
+                        <p>Commitment to quality management in every process.</p>
+                        <span>2025</span>
+                    </div>
+                    <div class="badge">Winner</div>
+                    <img class="card__img" src="img/Win1.svg" alt="Winner">
+                </div>
+
+                <div class="cert_card">
+                    <div>
+                        <h3>ISO 9001:2015 Certified</h3>
+                        <p>Commitment to quality management in every process.</p>
+                        <span>2023, 2024, 2025</span>
+                    </div>
+                    <div class="badge">Winner</div>
+                    <img class="card__img" src="img/Win2.svg" alt="Winner">
+                </div>
+
+                <div class="cert_card">
+                    <div>
+                        <h3>OSHA Safety Certified</h3>
+                        <p>Ensuring safe practices on every job site.</p>
+                        <span>2025</span>
+                    </div>
+                    <img class="card__img" src="img/Win3.svg" alt="Winner">
+                </div>
+
+                <div class="cert_card">
+                    <div>
+                        <h3>LEED Accredited Professionals</h3>
+                        <p>Expertise in sustainable, eco-friendly building.</p>
+                        <span>2025</span>
+                    </div>
+                    <img class="card__img" src="img/win3.svg" alt="Winner">
+                </div>
+
+                <div class="cert_card">
+                    <div>
+                        <h3>Licensed General Contractor</h3>
+                        <p>Recognized by industry leaders.</p>
+                        <span>2025</span>
+                    </div>
+                    <img class="card__img" src="img/Win1.svg" alt="Winner">
+                </div>
+
+                <div class="cert_card">
+                    <div>
+                        <h3>OSHA Safety Trained</h3>
+                        <p>Compliant with all local and national regulations</p>
+                        <span>2023, 2024, 2025</span>
+                    </div>
+                    <div class="badge">Winner</div>
+                    <img class="card__img" src="img/Win2.svg" alt="Winner">
+                </div>
+            </div>
+
+            <div class="btn-wrap">
+                <button class="button">View All Certifications <svg class="button__icon"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg></button>
+            </div>
+        </div>
+    </section>
+    <section class="partners center padding-tb">
+        <div class="container">
+            <h2 class="partners__title">Trusted partners</h2>
+            <p class="text">
+                We believe great construction happens through strong partnerships. Over the years, we’ve teamed up
+                with leading suppliers, architects, and industry organizations to ensure every project gets the best
+                materials, expertise, and technology available.
+            </p>
+            <div class="partners_cards">
+                <div class="partners__slider">
+                    <button class="partners__arrow  partners__arrow_prev" type="button" aria-label="Previous project">
+                        <svg class="partners__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <div class="partners__viewport">
+                        <div class="partners__track">
+                            <div class="partners__content">
+                                <img src="img/partners.png" alt="house">
+                                <div class="partners_description">
+                                    <h3>CityPoint Retail Center</h3>
+                                    <p>
+                                        From sleek modern homes to large-scale commercial complexes, our projects
+                                        reflect
+                                        the
+                                        skill, precision, and dedication we bring to every build. Each one tells a
+                                        story of
+                                        careful planning, expert execution, and lasting quality.
                                     </p>
                                 </div>
-                            </article>
-                        </div>
-                        <div class="portfolio__item">
-                            <article class="portfolio-card">
-                                <img class="portfolio-card__img" src="img/house2.jpg" alt="Riverside Heights">
-
-                                <div class="portfolio-card__content">
-                                    <h3 class="subtitle">
-                                        Riverside Heights
-                                    </h3>
-
-                                    <p class="portfolio-card__text">
-                                        Luxury residential complex with panoramic views and eco-friendly design.
-                                    </p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="portfolio__item">
-                            <article class="portfolio-card">
-                                <img class="portfolio-card__img" src="img/house3.jpg" alt="Hillside Villa Renovation">
-
-                                <div class="portfolio-card__content">
-                                    <h3 class="subtitle">
-                                        Hillside Villa Renovation
-                                    </h3>
-
-                                    <p class="portfolio-card__text">
-                                        Full interior and exterior remodel blending classic charm with modern finishes.
-                                    </p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="portfolio__item">
-                            <article class="portfolio-card">
-                                <img class="portfolio-card__img" src="img/house4.jpg" alt="Maple Grove Townhomes">
-
-                                <div class="portfolio-card__content">
-                                    <h3 class="subtitle">
-                                        Maple Grove Townhomes
-                                    </h3>
-
-                                    <p class="portfolio-card__text">
+                            </div>
+                            <div class="partners__content">
+                                <img src="img/partners2.png" alt="house">
+                                <div class="partners_description">
+                                    <h3>Skyline Penthouse Remode</h3>
+                                    <p>
                                         A stylish suburban development offering comfort, community, and convenience.
-                                    </p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="portfolio__item">
-                            <article class="portfolio-card">
-                                <img class="portfolio-card__img" src="img/house5.jpg"
-                                    alt="Riverside Heights Residences">
-
-                                <div class="portfolio-card__content">
-                                    <h3 class="subtitle">
-                                        Riverside Heights Residences
-                                    </h3>
-
-                                    <p class="portfolio-card__text">
-                                        A modern riverside apartment complex with energy-efficient design and panoramic
-                                        city views.
-                                    </p>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="portfolio__item">
-                            <article class="portfolio-card">
-                                <img class="portfolio-card__img" src="img/house6.jpg" alt="Hillside Villa Restoration">
-
-                                <div class="portfolio-card__content">
-                                    <h3 class="subtitle">
-                                        Hillside Villa Restoration
-                                    </h3>
-
-                                    <p class="portfolio-card__text">
-                                        Complete restoration of a heritage property, blending classic architecture with
+                                        Complete restoration of a heritage property, blending classic architecture
+                                        with
                                         modern comforts.
                                     </p>
                                 </div>
-                            </article>
+                            </div>
+                            <div class="partners__content">
+                                <img src="img/partners3.png" alt="house">
+                                <div class="partners_description">
+                                    <h3>Oakwood Family Estate</h3>
+                                    <p>
+                                        Luxury interior transformation with premium finishes and smart-home
+                                        integration. A
+                                        modern riverside apartment complex with energy-efficient design and
+                                        panoramic city
+                                        views.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <button class="portfolio__arrow portfolio__arrow_next" type="button" aria-label="Next project">
-                        <svg class="portfolio__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    <button class="partners__arrow partners__arrow_next" type="button" aria-label="Next project">
+                        <svg class="partners__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                             viewBox="0 0 24 24" fill="none">
                             <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" />
@@ -228,402 +397,223 @@
                     </button>
                 </div>
             </div>
+            <div class="partners_bottom">
+                <div class="partners__progress">
 
-            <div class="portfolio__bottom">
-                <div class="portfolio__progress">
-                    <div class="portfolio__progress-count">
-                        <span class="portfolio__progress-current">01</span>
-                        <span class="portfolio__progress-slash">/</span>
-                        <span class="portfolio__progress-total">02</span>
+                    <div class="partners__progress-count">
+                        <span class="partners__progress-current">01</span>
+                        <span class="partners__progress-slash">/</span>
+                        <span class="partners__progress-total">03</span>
                     </div>
 
-                    <div class="portfolio__progress-bar">
-                        <div class="portfolio__progress-fill"></div>
+                    <div class="partners__progress-bar">
+                        <div class="partners__progress-fill"></div>
                     </div>
+
                 </div>
-
-                <a class="button portfolio__button" href="#">
-                    <span>View Full Portfolio</span>
-
-                    <svg class="button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        viewBox="0 0 24 24" fill="none">
+                <button class="button partners_button">View Full Portfolio <svg class="button__icon"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
-                    </svg>
-                </a>
+                    </svg></button>
             </div>
-        </section>
-        <section class="certifications center padding-tb">
-            <div class="container">
-                <h2 class="cert_title">Certifications & credentials</h2>
-                <p class="text">
-                    We believe great construction starts with strong foundations — not just in buildings,
-                    but in professional standards. Our team holds industry-recognized certifications.
-                </p>
+    </section>
+    <section class="faq-container center padding-tb">
+        <div class="faq_content center">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <div class="faq">
+                <div class="faq__item">
+                    <button class="faq__question" type="button">
+                        <span class="faq_quest">What types of construction projects do you handle?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
+                                fill="#052838" />
 
-                <div class="grid">
-                    <div class="cert_card">
-                        <div>
-                            <h3>Fully Licensed & Insured</h3>
-                            <p>Commitment to quality management in every process.</p>
-                            <span>2025</span>
-                        </div>
-                        <div class="badge">Winner</div>
-                        <img class="card__img" src="img/Win1.svg" alt="Winner">
-                    </div>
-
-                    <div class="cert_card">
-                        <div>
-                            <h3>ISO 9001:2015 Certified</h3>
-                            <p>Commitment to quality management in every process.</p>
-                            <span>2023, 2024, 2025</span>
-                        </div>
-                        <div class="badge">Winner</div>
-                        <img class="card__img" src="img/Win2.svg" alt="Winner">
-                    </div>
-
-                    <div class="cert_card">
-                        <div>
-                            <h3>OSHA Safety Certified</h3>
-                            <p>Ensuring safe practices on every job site.</p>
-                            <span>2025</span>
-                        </div>
-                        <img class="card__img" src="img/Win3.svg" alt="Winner">
-                    </div>
-
-                    <div class="cert_card">
-                        <div>
-                            <h3>LEED Accredited Professionals</h3>
-                            <p>Expertise in sustainable, eco-friendly building.</p>
-                            <span>2025</span>
-                        </div>
-                        <img class="card__img" src="img/win3.svg" alt="Winner">
-                    </div>
-
-                    <div class="cert_card">
-                        <div>
-                            <h3>Licensed General Contractor</h3>
-                            <p>Recognized by industry leaders.</p>
-                            <span>2025</span>
-                        </div>
-                        <img class="card__img" src="img/Win1.svg" alt="Winner">
-                    </div>
-
-                    <div class="cert_card">
-                        <div>
-                            <h3>OSHA Safety Trained</h3>
-                            <p>Compliant with all local and national regulations</p>
-                            <span>2023, 2024, 2025</span>
-                        </div>
-                        <div class="badge">Winner</div>
-                        <img class="card__img" src="img/Win2.svg" alt="Winner">
-                    </div>
-                </div>
-
-                <div class="btn-wrap">
-                    <button class="button">View All Certifications <svg class="button__icon"
-                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg></button>
-                </div>
-            </div>
-        </section>
-        <section class="partners center padding-tb">
-            <div class="container">
-                <h2 class="partners__title">Trusted partners</h2>
-                <p class="text">
-                    We believe great construction happens through strong partnerships. Over the years, we’ve teamed up
-                    with leading suppliers, architects, and industry organizations to ensure every project gets the best
-                    materials, expertise, and technology available.
-                </p>
-                <div class="partners_cards">
-                    <div class="partners__slider">
-                        <button class="partners__arrow  partners__arrow_prev" type="button"
-                            aria-label="Previous project">
-                            <svg class="partners__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24" fill="none">
-                                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                        <div class="partners__viewport">
-                            <div class="partners__track">
-                                <div class="partners__content">
-                                    <img src="img/partners.png" alt="house">
-                                    <div class="partners_description">
-                                        <h3>CityPoint Retail Center</h3>
-                                        <p>
-                                            From sleek modern homes to large-scale commercial complexes, our projects
-                                            reflect
-                                            the
-                                            skill, precision, and dedication we bring to every build. Each one tells a
-                                            story of
-                                            careful planning, expert execution, and lasting quality.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="partners__content">
-                                    <img src="img/partners2.png" alt="house">
-                                    <div class="partners_description">
-                                        <h3>Skyline Penthouse Remode</h3>
-                                        <p>
-                                            A stylish suburban development offering comfort, community, and convenience.
-                                            Complete restoration of a heritage property, blending classic architecture
-                                            with
-                                            modern comforts.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="partners__content">
-                                    <img src="img/partners3.png" alt="house">
-                                    <div class="partners_description">
-                                        <h3>Oakwood Family Estate</h3>
-                                        <p>
-                                            Luxury interior transformation with premium finishes and smart-home
-                                            integration. A
-                                            modern riverside apartment complex with energy-efficient design and
-                                            panoramic city
-                                            views.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="partners__arrow partners__arrow_next" type="button"
-                                aria-label="Next project">
-                                <svg class="partners__arrow-icon" xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </button>
-
-                        </div>
-                        <div class="partners_bottom">
-                            <div class="partners__progress">
-
-                                <div class="partners__progress-count">
-                                    <span class="partners__progress-current">01</span>
-                                    <span class="partners__progress-slash">/</span>
-                                    <span class="partners__progress-total">03</span>
-                                </div>
-
-                                <div class="partners__progress-bar">
-                                    <div class="partners__progress-fill"></div>
-                                </div>
-
-                            </div>
-                            <button class="button partners_button">View Full Portfolio <svg class="button__icon"
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg></button>
-                        </div>
-
-                    </div>
-        </section>
-        <section class="faq-container center padding-tb">
-            <div class="faq_content center">
-                <h2 class="faq-title">Frequently Asked Questions</h2>
-                <div class="faq">
-                    <div class="faq__item">
-                        <button class="faq__question" type="button">
-                            <span class="faq_quest">What types of construction projects do you handle?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path
-                                    d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
-                                    fill="#052838" />
-
-                            </svg>
-                        </button>
-                        <p class="faq__answer">
-                            We specialize in a wide range of construction projects, including residential renovations,
-                            commercial builds, and large-scale developments. Our team has experience with everything
-                            from
-                            custom homes to office complexes, retail spaces, and mixed-use developments.
-                        </p>
-                    </div>
-
-                    <div class="faq__item">
-                        <button class="faq__question" type="button">
-                            <span class="faq_quest">How long will my project take?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path
-                                    d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
-                                    fill="#052838" />
-                            </svg>
-                        </button>
-                        <p class="faq__answer">
-                            Project timelines vary depending on scope and complexity. We’ll provide a detailed schedule
-                            after our initial consultation and keep you updated at every stage.
-                        </p>
-                    </div>
-                    <div class="faq__item">
-                        <button class="faq__question" type="button">
-                            <span class="faq_quest">Do you provide cost estimates before starting?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path
-                                    d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
-                                    fill="#052838" />
-
-                            </svg>
-                        </button>
-                        <p class="faq__answer">
-                            Yes, we provide detailed cost estimates before any work begins. Our team will conduct a
-                            thorough
-                            assessment of your project and deliver a comprehensive quote.
-                        </p>
-                    </div>
-                    <div class="faq__item">
-                        <button class="faq__question" type="button">
-                            <span class="faq_quest">Are you licensed and insured?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path
-                                    d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
-                                    fill="#052838" />
-
-                            </svg>
-                        </button>
-                        <p class="faq__answer">
-                            Absolutely. We are fully licensed and insured, and our team holds industry-recognized
-                            certifications to ensure the highest standards of quality and safety.
-                        </p>
-                    </div>
-                    <div class="faq__item">
-                        <button class="faq__question" type="button">
-                            <span class="faq_quest">Can you work with my own architect or designer?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path
-                                    d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
-                                    fill="#052838" />
-                            </svg>
-                        </button>
-                        <p class="faq__answer">
-                            Absolutely. We collaborate closely with architects and designers to bring their visions to
-                            life
-                            while maintaining the highest standards of quality and efficiency.
-                        </p>
-                    </div>
-                    <div class="faq__item">
-                        <button class="faq__question" type="button">
-                            <span class="faq_quest">Do you offer eco-friendly building options?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path
-                                    d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
-                                    fill="#052838" />
-
-                            </svg>
-                        </button>
-                        <p class="faq__answer">
-                            Yes, we are committed to sustainable building practices and offer a range of eco-friendly
-                            options, including energy-efficient materials, green building certifications, and
-                            sustainable
-                            design solutions.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="start center">
-            <div class="start_conteiner">
-                <div class="start_content">
-                    <h2 class="heading start_title">Start Your Project Today!</h2>
-                    <p class="start_text">Tell us about your construction needs, and our team will get back to you with
-                        a detailed proposal.</p>
-                    <p class="start_text">Once we receive your application, one of our project managers will contact you
-                        within 24 hours to discuss your goals, budget, and next steps.</p>
-                    <form class="start-form" action="#" method="POST">
-                        <div class="form_group form_dark cta_form">
-                            <label for="cta_phone" class="start_lable">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" class="form_input" placeholder="Phone Number"
-                                required>
-                            <button type="submit" class="submit-btn">Submit</button>
-                        </div>
-                    </form>
-                    <p class="privacy-text">
-                        *By clicking on the button, you agree to the privacy policy and give consent to the
-                        processing of your personal data.
+                        </svg>
+                    </button>
+                    <p class="faq__answer">
+                        We specialize in a wide range of construction projects, including residential renovations,
+                        commercial builds, and large-scale developments. Our team has experience with everything
+                        from
+                        custom homes to office complexes, retail spaces, and mixed-use developments.
                     </p>
-
                 </div>
-                <div class="start_img"> <img src="img/Start_img.png" alt="Start Image"></div>
+
+                <div class="faq__item">
+                    <button class="faq__question" type="button">
+                        <span class="faq_quest">How long will my project take?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
+                                fill="#052838" />
+                        </svg>
+                    </button>
+                    <p class="faq__answer">
+                        Project timelines vary depending on scope and complexity. We’ll provide a detailed schedule
+                        after our initial consultation and keep you updated at every stage.
+                    </p>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" type="button">
+                        <span class="faq_quest">Do you provide cost estimates before starting?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
+                                fill="#052838" />
+
+                        </svg>
+                    </button>
+                    <p class="faq__answer">
+                        Yes, we provide detailed cost estimates before any work begins. Our team will conduct a
+                        thorough
+                        assessment of your project and deliver a comprehensive quote.
+                    </p>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" type="button">
+                        <span class="faq_quest">Are you licensed and insured?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
+                                fill="#052838" />
+
+                        </svg>
+                    </button>
+                    <p class="faq__answer">
+                        Absolutely. We are fully licensed and insured, and our team holds industry-recognized
+                        certifications to ensure the highest standards of quality and safety.
+                    </p>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" type="button">
+                        <span class="faq_quest">Can you work with my own architect or designer?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
+                                fill="#052838" />
+                        </svg>
+                    </button>
+                    <p class="faq__answer">
+                        Absolutely. We collaborate closely with architects and designers to bring their visions to
+                        life
+                        while maintaining the highest standards of quality and efficiency.
+                    </p>
+                </div>
+                <div class="faq__item">
+                    <button class="faq__question" type="button">
+                        <span class="faq_quest">Do you offer eco-friendly building options?</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path
+                                d="M14.7584 5.25853L13.575 4.0752L8.09171 9.55853L2.60838 4.0752L1.42505 5.25853L8.09171 11.9252L14.7584 5.25853Z"
+                                fill="#052838" />
+
+                        </svg>
+                    </button>
+                    <p class="faq__answer">
+                        Yes, we are committed to sustainable building practices and offer a range of eco-friendly
+                        options, including energy-efficient materials, green building certifications, and
+                        sustainable
+                        design solutions.
+                    </p>
+                </div>
             </div>
-        </section>
-        <footer class="footer center">
-            <div class="container center">
-                <div class="footer-content center">
-                    <div class="footer-left">
+        </div>
+    </section>
+    <section class="start center">
+        <div class="start_conteiner">
+            <div class="start_content">
+                <h2 class="heading start_title">Start Your Project Today!</h2>
+                <p class="start_text">Tell us about your construction needs, and our team will get back to you with
+                    a detailed proposal.</p>
+                <p class="start_text">Once we receive your application, one of our project managers will contact you
+                    within 24 hours to discuss your goals, budget, and next steps.</p>
+                <form class="start-form" action="#" method="POST">
+                    <div class="form_group form_dark cta_form">
+                        <label for="cta_phone" class="start_lable">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form_input" placeholder="Phone Number"
+                            required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </form>
+                <p class="privacy-text">
+                    *By clicking on the button, you agree to the privacy policy and give consent to the
+                    processing of your personal data.
+                </p>
+
+            </div>
+            <div class="start_img"> <img src="img/Start_img.png" alt="Start Image"></div>
+        </div>
+    </section>
+    <footer class="footer center">
+        <div class="container center">
+            <div class="footer-content center">
+                <div class="footer-left">
+                    <div class="footer_logo_copy">
                         <div class="footer-logo">
                             <img src="img/Logo.png" alt="logo">
                         </div>
                         <p class="footer-copyright">© 2025 Company</p>
-
-                        <div class="footer-social">
-                            <a href="#" class="social-link" aria-label="Instagram">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
-                                    <path
-                                        d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998z" />
-                                    <circle cx="18.406" cy="5.594" r="1.44" />
-                                </svg>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Telegram">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Twitter">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                                </svg>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Facebook">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                                </svg>
-                            </a>
-                        </div>
                     </div>
-
-                    <div class="footer-center">
-                        <nav class="footer-nav">
-                            <a href="#" class="nav-link">Main</a>
-                            <a href="#" class="nav-link">Price</a>
-                            <a href="#" class="nav-link">Contacts</a>
-                            <a href="#" class="nav-link">Portfolio</a>
-                            <a href="#" class="nav-link">Certifications</a>
-                        </nav>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z" />
+                                <path
+                                    d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998z" />
+                                <circle cx="18.406" cy="5.594" r="1.44" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
                     </div>
+                </div>
 
-                    <div class="footer-right">
-                        <div class="footer-form-section">
-                            <h3 class="footer-form-title">Tell us about your construction needs</h3>
-                            <p class="footer-form-text">
-                                Once we receive your application, one of our project managers will contact you within 24
-                                hours to discuss your goals, budget, and next steps.
-                            </p>
-                            <form class="footer-form" action="#" method="POST">
-                                <input type="tel" class="form-input-footer" placeholder="Phone Number" required>
-                                <button type="submit" class="submit-btn-footer">Submit</button>
-                            </form>
-                        </div>
+                <div class="footer-center">
+                    <nav class="footer-nav">
+                        <a href="#" class="nav-link">Main</a>
+                        <a href="#" class="nav-link">Price</a>
+                        <a href="#" class="nav-link">Contacts</a>
+                        <a href="#" class="nav-link">Portfolio</a>
+                        <a href="#" class="nav-link">Certifications</a>
+                    </nav>
+                </div>
+
+                <div class="footer-right">
+                    <div class="footer-form-section">
+                        <h3 class="footer-form-title">Tell us about your construction needs</h3>
+                        <p class="footer-form-text">
+                            Once we receive your application, one of our project managers will contact you within 24
+                            hours to discuss your goals, budget, and next steps.
+                        </p>
+                        <form class="footer-form" action="#" method="POST">
+                            <input type="tel" class="form-input-footer" placeholder="Phone Number" required>
+                            <button type="submit" class="submit-btn-footer">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
 
 
-    </html>
+</html>
