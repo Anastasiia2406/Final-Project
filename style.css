@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -1081,7 +1085,7 @@ body {
     justify-content: center;
     width: 40px;
     height: 40px;
-    color: #6b7280;
+    color: #000000;
     background-color: #f9fafb;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -1393,9 +1397,7 @@ body {
         min-height: 56px;
         margin-top: 12px;
     }
-}
 
-@media (max-width: 480px) {
     .portfolio {
         display: flex;
         flex-direction: column;
@@ -1492,9 +1494,7 @@ body {
         font-size: 14px;
         line-height: 20px;
     }
-}
 
-@media (max-width: 480px) {
     .certifications {
         padding-top: 48px;
         padding-bottom: 48px;
@@ -1571,9 +1571,7 @@ body {
         right: 20px;
         bottom: 20px;
     }
-}
 
-@media (max-width: 480px) {
     .partners {
         padding-top: 48px;
         padding-bottom: 48px;
@@ -1669,9 +1667,7 @@ body {
     .partners_description p {
         overflow: hidden;
     }
-}
 
-@media (max-width: 480px) {
     .faq-container {
         padding-top: 48px;
         padding-bottom: 48px;
@@ -1726,9 +1722,7 @@ body {
         max-height: 300px;
         margin-bottom: 20px;
     }
-}
 
-@media (max-width: 480px) {
 
     .start {
         padding-bottom: 48px;
@@ -1798,6 +1792,10 @@ body {
         padding: 48px 16px;
     }
 
+    .footer .container {
+        padding: 0;
+    }
+
     .footer-content {
         display: flex;
         flex-direction: column;
@@ -1805,7 +1803,12 @@ body {
     }
 
     .footer-left {
-        gap: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        flex-wrap: wrap;
     }
 
     .footer-logo img {
@@ -1819,6 +1822,7 @@ body {
 
     .footer-social {
         gap: 12px;
+        margin-top: 0;
     }
 
     .social-link {
