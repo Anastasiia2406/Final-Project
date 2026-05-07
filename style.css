@@ -109,9 +109,11 @@ body {
 .header__phone:hover {
     background: #0C3D54;
 }
+
 .header__phone:active {
     background: var(--Brand-Pressed, #041A24);
 }
+
 .phone {
     display: flex;
     align-items: center;
@@ -199,9 +201,11 @@ body {
 .button:hover {
     background: #0C3D54;
 }
-.button:active{
+
+.button:active {
     background: var(--Brand-Pressed, #041A24);
 }
+
 .hero__button {
     display: flex;
     width: 260px;
@@ -218,9 +222,11 @@ body {
 .hero__button:hover {
     background: #0C3D54;
 }
+
 .hero__button:active {
     background: var(--Brand-Pressed, #041A24);
 }
+
 .about {
     flex-grow: 1;
     padding-top: 120px;
@@ -644,12 +650,15 @@ body {
     background: var(--Brand-Primary, #052838);
     border: none;
 }
+
 .partners__arrow:hover {
     background: var(--Brand-Hover, #0C3D54);
 }
+
 .partners__arrow:active {
     background: var(--Brand-Pressed, #041A24);
 }
+
 .partners__arrow_prev {
     left: -32px;
     right: auto;
@@ -1022,7 +1031,11 @@ body {
 }
 
 .submit-btn:hover {
-    background: #D7DAE2;
+    background: #F7F8FA;
+}
+
+.submit-btn:active {
+    background: #F2F4F8;
 }
 
 .privacy-text {
@@ -1209,12 +1222,11 @@ body {
 }
 
 .submit-btn-footer:hover {
-    background-color: #1e293b;
-    transform: translateY(-2px);
+    background-color: #0C3D54;
 }
 
 .submit-btn-footer:active {
-    transform: translateY(0);
+    background: var(--Brand-Pressed, #041A24);
 }
 
 @media (max-width: 480px) {
